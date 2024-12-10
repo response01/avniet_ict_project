@@ -3,42 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nature Photo</title>
+    <title>Display Photo</title>
     <style>
         body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #e9f5e9;
-            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
         }
 
         .photo-container {
             text-align: center;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .photo-container img {
-            max-width: 90%;
+            max-width: 100%;
             height: auto;
-            border: 10px solid #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            border-radius: 10px;
+            border-radius: 8px;
         }
 
-        .caption {
-            margin-top: 15px;
+        .photo-caption {
+            margin-top: 10px;
             font-size: 1.2rem;
-            color: #4a4a4a;
+            color: #333;
         }
     </style>
 </head>
 <body>
     <div class="photo-container">
-        <img src="https://source.unsplash.com/1024x768/?nature" alt="Nature Photo">
-        <div class="caption">A serene view of nature</div>
+        <img src="https://www.filmfare.com/news/bollywood/prabhas-launches-new-website-to-promote-budding-writers-69557.html" alt="Sample Photo">
+        <div class="photo-caption">This is a sample photo.</div>
     </div>
 </body>
 </html>
