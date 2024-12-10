@@ -1,58 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cricket Score</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
-        }
-        .container {
-            max-width: 600px;
-            margin: 50px auto;
-            padding: 20px;
-            background: #ffffff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            text-align: center;
-        }
-        .title {
-            font-size: 24px;
-            margin-bottom: 20px;
-            color: #343a40;
-        }
-        .team {
-            font-size: 20px;
-            margin: 10px 0;
-        }
-        .score {
-            font-size: 36px;
-            font-weight: bold;
-            margin: 10px 0;
-            color: #007bff;
-        }
-        .details {
-            font-size: 14px;
-            color: #6c757d;
-            margin-top: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OTT Platform</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #121212;
+      color: #fff;
+    }
+
+    /* Header Styles */
+    .header {
+      background-color: #1f1f1f;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .search-bar {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .search-bar input {
+      width: 50%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px 0 0 5px;
+      outline: none;
+    }
+
+    .search-bar button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #ff5722;
+      color: #fff;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+    }
+
+    .search-bar button:hover {
+      background-color: #e64a19;
+    }
+
+    /* Main Content Styles */
+    .content {
+      padding: 20px;
+    }
+
+    .content h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    .movie-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 20px;
+    }
+
+    .movie-card {
+      background-color: #1f1f1f;
+      border-radius: 5px;
+      overflow: hidden;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .movie-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .movie-card p {
+      margin-top: 10px;
+      font-size: 1rem;
+    }
+
+    /* Footer Styles */
+    .footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #1f1f1f;
+      margin-top: 20px;
+    }
+
+    .footer p {
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="title">Live Cricket Score</div>
-        <div class="team">Australia</div>
-        <div class="score">359/8</div>
-        <div class="team">India</div>
-        <div class="score">300/5</div>
-	<div class="Batting">Dhoni: 180 | Kohli: 100*</div>
-	<div>Extras: 20</div>
-        <div class="details">Overs: 42.0 | Required Runs: 60 | Balls Remaining: 48 Balls </div>
+  <header class="header">
+    <h1>My OTT Platform</h1>
+    <div class="search-bar">
+      <input type="text" placeholder="Search for movies or shows..." />
+      <button>Search</button>
     </div>
+  </header>
+
+  <main class="content">
+    <h2>Popular Movies</h2>
+    <div class="movie-grid">
+      <div class="movie-card">
+        <img src="https://via.placeholder.com/150x220" alt="Movie 1">
+        <p>Movie Title 1</p>
+      </div>
+      <div class="movie-card">
+        <img src="https://via.placeholder.com/150x220" alt="Movie 2">
+        <p>Movie Title 2</p>
+      </div>
+      <div class="movie-card">
+        <img src="https://via.placeholder.com/150x220" alt="Movie 3">
+        <p>Movie Title 3</p>
+      </div>
+      <div class="movie-card">
+        <img src="https://via.placeholder.com/150x220" alt="Movie 4">
+        <p>Movie Title 4</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2024 My OTT Platform. All rights reserved.</p>
+  </footer>
 </body>
 </html>
-
