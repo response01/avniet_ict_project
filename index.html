@@ -1,144 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OTT Platform</title>
-  <style>
-    /* General Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Photo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #e9f5e9;
+            font-family: Arial, sans-serif;
+        }
 
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background-color: #121212;
-      color: #fff;
-    }
+        .photo-container {
+            text-align: center;
+        }
 
-    /* Header Styles */
-    .header {
-      background-color: #1f1f1f;
-      padding: 20px;
-      text-align: center;
-    }
+        .photo-container img {
+            max-width: 90%;
+            height: auto;
+            border: 10px solid #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
 
-    .header h1 {
-      font-size: 2rem;
-      margin-bottom: 10px;
-    }
-
-    .search-bar {
-      display: flex;
-      justify-content: center;
-      margin-top: 10px;
-    }
-
-    .search-bar input {
-      width: 50%;
-      padding: 10px;
-      border: none;
-      border-radius: 5px 0 0 5px;
-      outline: none;
-    }
-
-    .search-bar button {
-      padding: 10px 20px;
-      border: none;
-      background-color: #ff5722;
-      color: #fff;
-      border-radius: 0 5px 5px 0;
-      cursor: pointer;
-    }
-
-    .search-bar button:hover {
-      background-color: #e64a19;
-    }
-
-    /* Main Content Styles */
-    .content {
-      padding: 20px;
-    }
-
-    .content h2 {
-      font-size: 1.5rem;
-      margin-bottom: 20px;
-    }
-
-    .movie-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-      gap: 20px;
-    }
-
-    .movie-card {
-      background-color: #1f1f1f;
-      border-radius: 5px;
-      overflow: hidden;
-      text-align: center;
-      padding: 10px;
-    }
-
-    .movie-card img {
-      width: 100%;
-      height: auto;
-      border-radius: 5px;
-    }
-
-    .movie-card p {
-      margin-top: 10px;
-      font-size: 1rem;
-    }
-
-    /* Footer Styles */
-    .footer {
-      text-align: center;
-      padding: 10px;
-      background-color: #1f1f1f;
-      margin-top: 20px;
-    }
-
-    .footer p {
-      font-size: 0.9rem;
-    }
-  </style>
+        .caption {
+            margin-top: 15px;
+            font-size: 1.2rem;
+            color: #4a4a4a;
+        }
+    </style>
 </head>
 <body>
-  <header class="header">
-    <h1>My OTT Platform</h1>
-    <div class="search-bar">
-      <input type="text" placeholder="Search for movies or shows..." />
-      <button>Search</button>
+    <div class="photo-container">
+        <img src="https://source.unsplash.com/1024x768/?nature" alt="Nature Photo">
+        <div class="caption">A serene view of nature</div>
     </div>
-  </header>
-
-  <main class="content">
-    <h2>Popular Movies</h2>
-    <div class="movie-grid">
-      <div class="movie-card">
-        <img src="https://via.placeholder.com/150x220" alt="Movie 1">
-        <p>Movie Title 1</p>
-      </div>
-      <div class="movie-card">
-        <img src="https://via.placeholder.com/150x220" alt="Movie 2">
-        <p>Movie Title 2</p>
-      </div>
-      <div class="movie-card">
-        <img src="https://via.placeholder.com/150x220" alt="Movie 3">
-        <p>Movie Title 3</p>
-      </div>
-      <div class="movie-card">
-        <img src="https://via.placeholder.com/150x220" alt="Movie 4">
-        <p>Movie Title 4</p>
-      </div>
-    </div>
-  </main>
-
-  <footer class="footer">
-    <p>© 2024 My OTT Platform. All rights reserved.</p>
-  </footer>
 </body>
 </html>
